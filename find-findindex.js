@@ -41,5 +41,5 @@ function removeUser(usersArray, username) {
   const userIdx = usersArray.findIndex(function(user){
     return user.username === username
   })
-  return usersArray.splice(userIdx,1);
+  return usersArray.splice(userIdx,1)[0];
 }
